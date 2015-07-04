@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
@@ -14,10 +14,16 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
+  <script src="/js/tower.js"></script>
+  <script src="/js/runner.js"></script>
+  <script src="/js/dragrace.js"></script>
 
   <title></title>
 </head>
 <body>
-  <%= yield %>
+  <div id="wrapper">
+    <a href="/"><h1 class="title"> Super_Party_Land </h1></a>
+    <%= yield %>
+  </div>
 </body>
 </html>

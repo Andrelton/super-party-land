@@ -15,6 +15,12 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'httparty'
+gem 'json'
+gem 'awesome_print'
+
+gem 'dotenv'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

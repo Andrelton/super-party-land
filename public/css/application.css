@@ -1,0 +1,106 @@
+/*MY NEW STANDARD STARTING CSS*/
+html, body {
+  height: 100%;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-image: url("http://hdw.datawallpaper.com/nature/view-of-a-wonderful-fjord-hd-wallpaper-503154.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#wrapper {
+  padding: 5%;
+  background-color: rgba(224, 224, 224, 0.8);
+  height: auto;
+  min-height: 100%;
+}
+
+#wrapper *:not(div) {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+input {
+  display: block;
+}
+
+button, input[type="submit"] {
+  color: white;
+  background-color: #DE1E7E;
+  padding-top: 3px;
+  border-radius: 3px;
+  border: 0px;
+
+}
+
+button {
+  background-color: #BADA55;
+}
+
+/*ADDTIONS*/
+
+/*input[type="radio"], label {
+  display: inline;
+  float: left;
+}
+
+input[type="radio"] {
+  clear: left;
+}*/
+
+div.brick {
+  height: 50px;
+  width: 200px;
+  border: 1px dotted white;
+  background-color: #C0FFEE;
+  margin: 0px;
+}
+
+.template {
+  display: none;
+}
+
+div.brick {
+  margin: 0px;
+}
+
+h1.title {
+  display: inline-block;
+  color: white;
+  background-color: #10ADED;
+}
+
+a {
+  text-decoration: none;
+  color: #FEEB1E;
+  background-color: #FFA319;
+}
+div.track {
+  margin: 10px;
+}
+div.bar {
+  display: inline-block;
+  width: 3px;
+  background-color: orange;
+  margin-left: 1px;
+}
+
+/*div.bar:hover {
+  background-color: crimson;
+}*/
+
+img.logo {
+  width: 150px;
+}
+
+a.login {
+  color: #fe57a1;
+  background-color: #501ace;
+}
+
+
+

@@ -1,7 +1,26 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $('button.party').on('click', function() {
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+
+
+  $('div.new-bear form').on('submit', function(event) {
+    event.preventDefault();
+
+    var method = $(this).attr('method');
+    var action = $(this).attr('action');
+    var data = $(this).serialize();
+
+    var request = $.ajax({
+      type: method,
+      url: action,
+      data: data
+    });
+
+    request.done(function(response) {
+      console.log("Response is "+response);
+      $('#wrapper').append(response);
+    });
+
+  });
+
 });

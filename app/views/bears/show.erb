@@ -1,0 +1,15 @@
+<h2>Here's <%= @bear.name %>!</h2>
+
+<p>
+  <%= @bear.color %><br>
+  <%= @bear.species %>
+<p>
+
+<a href="/bears/<%= @bear.id %>/edit">
+  Edit
+</a>
+
+<form method="POST" action="/bears/<%= @bear.id %>">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="DELETE">
+</form>

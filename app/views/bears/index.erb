@@ -1,0 +1,16 @@
+<h2>Here are the bears!</h2>
+
+<ul>
+<% @bears.each do |bear| %>
+
+  <a href="/bears/<%= bear.id %>">
+    <%= bear.name %>
+  </a>
+  <p>
+    <%= "#{bear.color}, #{bear.species}" %>
+  </p>
+
+<% end %>
+</ul>
+
+<a href="/bears/new">Create a Bear!</a>

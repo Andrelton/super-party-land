@@ -1,0 +1,24 @@
+<h2>Edit <%= @bear.name %></h2>
+
+<%= @bear.errors.full_messages if @bear.errors.any? %>
+
+<form method="POST" action="/bears/<%= @bear.id %>">
+  <input type="hidden" name="_method" value="PUT">
+
+  <%= erb :"bears/_form_text_fields" %>
+
+  <input type="submit" value="Save Changes">
+</form>
+
+<!-- <h2>Create a Bear</h2>
+
+<%= @bear.errors.full_messages if @bear.errors.any? %>
+
+<form method="POST" action="/bears">
+  <input type="text" name="bear[name]" placeholder="name" value="<%= @bear.name %>">
+  <input type="text" name="bear[color]" placeholder="color" value="<%= @bear.color %>">
+  <input type="text" name="bear[species]" placeholder="species" value="<%= @bear.species %>">
+  <input type="submit" value="Make Your Bear!">
+</form>
+
+ -->
