@@ -1,5 +1,17 @@
+// PUT THIS SCRIPT AT THE BOTTOM OF THE BODY (IN LAYOUT):
+// <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+// PUT THIS WHERE YOU WANT YOUR MAP:
+// <div class="googleMap valencia-sp"></div>
+// CSS => div.googleMap { width: 500px; height: 400px; }
+
+
+// ORIGINAL TEMPLATE FOR THE CODE BELOW:
+// http://www.w3schools.com/googleapi/google_maps_basic.asp
+
 var _gm = google.maps;
-var mapDiv = document.querySelector('div.googleMap.london-uk');
+     // WAS: document.getElementById("googleMap");
+var mapDiv = document.querySelector('div.googleMap.valencia-sp');
 var latitude = 40;
 var longitude = 0;
 
@@ -13,7 +25,7 @@ function makeMap() {
   };
 
   var map = new _gm.Map(mapDiv, mapOptions);
-  // var marker = new _gm.Marker()
+
   var marker = new google.maps.Marker({
     position: location,
     animation: _gm.Animation.DROP
@@ -22,7 +34,7 @@ function makeMap() {
   marker.setMap(map);
 }
 
-// _gm.event.addDomListener(window, 'load', makeMap);
+// WAS: _gm.event.addDomListener(window, 'load', makeMap);
 $(function() {
   makeMap();
 });
