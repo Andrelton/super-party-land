@@ -1,0 +1,18 @@
+div.position {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: silver;
+}
+
+div.active {
+  background-color: crimson;
+}
+
+div.template {
+  display: none;
+}
+
+div.position {
+  margin-left: 1px;
+}
