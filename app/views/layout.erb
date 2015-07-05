@@ -5,18 +5,11 @@
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
-  -->
-  <link rel="stylesheet" href="/css/normalize.css">
-  <!--
+
     application.css is where you put your styles
   -->
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/js/application.js"></script>
-  <script src="/js/tower.js"></script>
-  <script src="/js/runner.js"></script>
-  <script src="/js/dragrace.js"></script>
 
   <title></title>
 </head>
@@ -25,5 +18,13 @@
     <a href="/"><h1 class="title"> Super_Party_Land </h1></a>
     <%= yield %>
   </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="/js/application.js"></script>
+  <script src="/js/soundBar.js"></script>
+  <script src="/js/listeners.js"></script>
+  <script src="/js/runner.js"></script>
+  <script src="/js/maps.js"></script>
 </body>
 </html>

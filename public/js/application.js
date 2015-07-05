@@ -1,9 +1,8 @@
 $(document).ready(function() {
-  $('button.party').on('click', function() {
 
+  partyButton.clickListen();
 
-
-  $('div.new-bear form').on('submit', function(event) {
+  var cray = $('div.new-bear form').on('submit', function(event) {
     event.preventDefault();
 
     var method = $(this).attr('method');

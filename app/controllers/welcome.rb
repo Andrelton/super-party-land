@@ -19,16 +19,11 @@ get '/oauth/callback' do
 
 end
 
-get '/dragrace' do
-
-  erb :dragrace
-end
-
 get '/emojis' do
   headers = { "User-Agent" => "Super-Fun-Summer" }
   @emojis = HTTParty.get("https://api.github.com/emojis", headers: headers)
   ap @emojis
-  # erb :emojis
+  erb :_emojis
 end
 
 get '/soccer' do
@@ -36,3 +31,14 @@ get '/soccer' do
   @logos = client.get_teams
   erb :logos
 end
+
+get '/button' do
+  erb :button
+end
+
+get '/map' do
+  erb :map
+end
+
+
+
