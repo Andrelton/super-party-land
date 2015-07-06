@@ -14,9 +14,14 @@ var _gm = google.maps;
 var mapDiv = document.querySelector('div.googleMap.valencia-sp');
 var latitude = 40;
 var longitude = 0;
+var point = [40, 0];
 
 function makeMap() {
   var location = new _gm.LatLng(latitude, longitude);
+  // var thing = new Object();
+  // thing.constructor = _gm.LatLng;
+  // thing.__proto__ = _gm.LatLng.prototype;
+  // var location = _gm.LatLng.apply(thing, point);
 
   var mapOptions = {
     center: location,
@@ -38,3 +43,6 @@ function makeMap() {
 $(function() {
   makeMap();
 });
+
+
+
